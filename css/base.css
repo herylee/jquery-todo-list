@@ -4,11 +4,15 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
+    -webkit-transition: background .2s;
+    -moz-transition: background .2s;
+    -ms-transiton: background .2s;
+    -o-transiton: background .2s;
+    transition: background .2s;
 }
 
 body {
-    background-color : #4f7078;
+    background-color: #4f7078;
     color: #fff;
 }
 
@@ -63,20 +67,18 @@ button {
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 }
 
+/* .add-task [type=submit]:hover{
+
+    background: #77a5eaf5;
+} */
+
 .task-item {
-    padding: 10px;
     background: #fff;
     color: pink;
     margin-bottom: 2px;
-    border-radius: 3px;
     cursor: pointer;
-    -webkit-transition: background .2s;
-    -moz-transition: background .2s;
-    -ms-transiton: background .2s;
-    -o-transiton: background .2s;
-    transition: background .2s;
 }
 
 .task-item:hover {
-    background: #eee;
+    background: #77a5eaf5;
 }
