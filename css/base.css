@@ -19,6 +19,7 @@ body {
 .container {
     max-width: 700px;
     margin: 0 auto;
+    position: relative;
 }
 
 h1 {
@@ -31,6 +32,7 @@ h1 {
 
 input,
 .task-item,
+.task-detail-mask,
 button {
     border-radius: 3px;
     padding: 10px;
@@ -81,4 +83,27 @@ button {
 
 .task-item:hover {
     background: #77a5eaf5;
+}
+
+.task-detail-mask,
+.task-detail {
+    position: absolute;
+}
+
+.task-detail {
+    background: #fff;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.task-detail-mask{
+
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background: rgba(30,30,30,.6);
+    
+
 }
